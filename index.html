@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" />
+
+    <title>Meet Landing Page | Frontend Mentor Solution</title>
+  </head>
+
+  <body class="bg-white">
+    <header>
+      <nav class="mt-12 flex justify-center xl:mt-20">
+        <img class="h-[28px] w-[118px]" src="/logo.svg" alt="Meet logo" />
+      </nav>
+    </header>
+
+    <main>
+      <section class="mt-16 xl:mb-[143px] xl:mt-[87px]">
+        <div class="overflow-hidden xl:hidden">
+          <img
+            class="mx-auto h-[160px] w-[433px] object-cover md:h-[303px] md:w-[820px]"
+            src="mobile/image-hero.png"
+            alt="Hero image showing circles containing portrait photos of different people"
+          />
+        </div>
+
+        <div class="mx-8 md:mx-0 xl:my-[23px] xl:flex xl:justify-center">
+          <div class="hidden xl:block">
+            <img
+              class="h-[303px] w-[394px] -translate-y-[23px] object-cover object-right"
+              src="desktop/image-hero-left.png"
+              alt="Left side ero image showing circles containing portrait photos of different people"
+            />
+          </div>
+
+          <div class="mt-12 md:mt-[72px] xl:mt-0 xl:min-w-[704px]">
+            <div class="mx-auto flex max-w-[448px] flex-col gap-6 text-center xl:gap-8">
+              <h1 class="text-mobile-1 text-slate-900 md:text-tablet-1 xl:text-desktop-1">
+                Group Chat <br />
+                for Everyone
+              </h1>
+              <p class="text-mobile-4 text-slate-600 xl:text-desktop-4">
+                Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.
+              </p>
+              <div class="mx-auto flex flex-col items-center gap-4 md:flex-row">
+                <a class="btn btn-cyan" href="#"> Download<span class="ml-1 text-cyan-300">v1.3</span> </a>
+                <a class="btn btn-purple" href="#">What is it?</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="hidden xl:block xl:self-end">
+            <img
+              class="h-[303px] w-[394px] translate-y-[23px] object-cover object-left"
+              src="desktop/image-hero-right.png"
+              alt="Right side hero image showing circles containing portrait photos of different people"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="mx-8 mt-16 md:mx-auto md:mt-[120px] md:max-w-[680px] xl:max-w-[1120px]">
+        <!-- 01 marker -->
+        <div class="flex flex-col items-center">
+          <div class="h-20 w-px bg-slate-300"></div>
+          <div class="flex size-14 items-center justify-center rounded-full border border-slate-300">
+            <span class="text-mobile-5 leading-none text-slate-600">01</span>
+          </div>
+        </div>
+
+        <div class="my-16 grid grid-cols-2 gap-4 md:grid-cols-4 md:gap-6 xl:gap-8">
+          <img class="rounded-lg" src="mobile/image-woman-in-videocall.jpg" alt="Woman in a video call" />
+          <img class="rounded-lg" src="mobile/image-women-videochatting.jpg" alt="Three women video chatting" />
+          <img class="rounded-lg" src="mobile/image-men-in-meeting.jpg" alt="Two men in an online meeting" />
+          <img class="rounded-lg" src="mobile/image-man-texting.jpg" alt="Man texting on his smartphone" />
+        </div>
+
+        <div class="mx-auto text-center md:max-w-[504px] xl:max-w-[544px]">
+          <div class="mx-auto md:max-w-[445px]">
+            <h3 class="mb-4 text-mobile-3 uppercase tracking-[4px] text-cyan-600 md:text-tablet-3 xl:text-desktop-3">
+              Built for modern use
+            </h3>
+            <h2 class="mb-8 text-mobile-2 text-slate-900 md:text-tablet-2 xl:text-desktop-2">
+              Smarter meetings, all in one place
+            </h2>
+          </div>
+          <p class="text-mobile-4 text-slate-600 xl:text-desktop-4">
+            Send messages, share files, show your screen, and record your meetings &mdash; all in one workspace. Control
+            who can join with invite-only team access, data encryption, and data export.
+          </p>
+        </div>
+      </section>
+
+      <section class="mt-16">
+        <!-- 02 marker -->
+        <div class="relative z-10 -mb-7 flex flex-col items-center">
+          <div class="h-20 w-px bg-slate-300"></div>
+          <div class="flex size-14 items-center justify-center rounded-full border border-slate-300 bg-white">
+            <span class="text-mobile-5 leading-none text-slate-600">02</span>
+          </div>
+        </div>
+
+        <div class="relative px-8 py-16 text-center text-white xl:py-28 xl:text-left">
+          <picture>
+            <source srcset="desktop/image-footer.jpg" media="(min-width: 1280px)" />
+            <source srcset="tablet/image-footer.jpg" media="(min-width: 768px)" />
+            <img
+              class="absolute inset-0 h-full w-full object-cover"
+              src="mobile/image-footer.jpg"
+              alt="Woman using her laptop"
+            />
+          </picture>
+
+          <div class="absolute inset-0 bg-cyan-600 opacity-90"></div>
+          <div class="relative mx-auto flex flex-col gap-6 md:max-w-[504px] xl:max-w-[1120px] xl:flex-row xl:gap-8">
+            <h2 class="text-mobile-2 md:text-tablet-2 xl:max-w-[445px] xl:text-desktop-2">Experience more together</h2>
+            <p class="text-mobile-4 xl:max-w-[355px] xl:text-desktop-4">
+              Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.
+            </p>
+            <a class="btn btn-purple mx-auto inline-block xl:mx-0 xl:ml-auto xl:self-start" href="#">
+              Download<span class="ml-1 text-purple-300">v1.3</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

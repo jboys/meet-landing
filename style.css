@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom button classes */
+.btn {
+  @apply rounded-full px-10 py-4 text-mobile-5 text-white transition-colors duration-300 ease-in-out focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2;
+}
+
+.btn-cyan {
+  @apply bg-cyan-600 hover:bg-cyan-400 focus-visible:outline-cyan-600;
+}
+
+.btn-purple {
+  @apply bg-purple-600 hover:bg-purple-400 focus-visible:outline-purple-600;
+}
